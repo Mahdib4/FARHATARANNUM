@@ -62,24 +62,24 @@ export default function Preloader({ onComplete }: PreloaderProps) {
   return (
     <div 
       ref={containerRef}
-      className="fixed inset-0 z-50 bg-[#111] flex flex-col items-center justify-center pointer-events-none"
+      className="fixed inset-0 z-50 bg-[#111] flex flex-col items-center justify-center pointer-events-none px-4"
     >
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center text-center w-full max-w-full">
         <h1 
           ref={brandNameRef}
-          className="text-5xl md:text-7xl font-serif tracking-tighter text-white mb-2"
+          className="text-[clamp(1.6rem,7.5vw,4.5rem)] font-serif tracking-tighter text-white mb-2 whitespace-nowrap"
           style={{ opacity: 0 }}
         >
           FARHA TARANNUM
         </h1>
         <div 
           ref={coutureRef}
-          className="text-white text-xs md:text-sm tracking-[0.3em] uppercase mb-8"
+          className="text-white text-[10px] sm:text-xs md:text-sm tracking-[0.3em] uppercase mb-8"
           style={{ opacity: 0 }}
         >
           COUTURE
         </div>
-        <div className="w-64 h-[1px] bg-white/20 overflow-hidden">
+        <div className="w-48 sm:w-64 max-w-[80vw] h-[1px] bg-white/20 overflow-hidden">
           <div 
             ref={lineRef}
             className="w-full h-full bg-[#C9A96E]"
